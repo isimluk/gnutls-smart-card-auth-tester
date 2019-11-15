@@ -1,5 +1,7 @@
 # Container for testing smart card authentication
 
+[![Docker Repository on Quay](https://quay.io/repository/slukasik/gnutls-smart-card-auth-tester/status "Docker Repository on Quay")](https://quay.io/repository/slukasik/gnutls-smart-card-auth-tester)
+
 This provides very simple webserver created by gnutls upstream.
 
 ```
