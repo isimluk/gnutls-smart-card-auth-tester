@@ -8,7 +8,7 @@ RUN dnf builddep -y gnutls
 RUN git clone --depth 1 https://gitlab.com/gnutls/gnutls
 
 WORKDIR gnutls
-RUN ./bootstrap 
+RUN ./bootstrap
 RUN ./configure --disable-dane --disable-rpath --disable-guile --disable-tests --disable-doc
 RUN make
 
