@@ -7,10 +7,15 @@
  - insert smart card and point your browser to https://127.0.0.1:5556/
 
 ## Description
-Smart card authentication over HTTPS may be challenging thing to deploy. You need to have
-browser, smart card and server set-up properly, all in one step. When the you make even
-single mistake with one of the components the authentication will not work and there won't
-be too many debugging. Fortunately, there is very neat stub server build by [gnutls upstream](https://gitlab.com/gnutls/gnutls/)
+Smart card authentication over HTTPS may be challenging thing to deploy. Especially, for
+newcomers. At one step, You have to set-up all the components properly, you need to prepare
+your smart card, configure your browser (and whole client stack with nss, opensc, pcscd,
+p11-kit-proxy, etc.) and finally your server needs to be set-up properly to solicit and
+validate inserted card.
+
+When the you make even one mistake with one of the components the authentication will not
+work. Usually, there will be very little debugging steps available. Fortunately, there is
+very neat stub server build by [gnutls upstream](https://gitlab.com/gnutls/gnutls/)
 that can be used to debug capabilities of your client browser. You can simply run
 
 ```
